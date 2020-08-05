@@ -2,7 +2,7 @@
 authors = ["yngtodd"]
 multilingual = false
 src = "src"
-title = "Le Chat"
+title = "DSE511"
 
 [build]
 build-dir = "book"
