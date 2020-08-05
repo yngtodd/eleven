@@ -4,7 +4,7 @@ import argh
 
 def greet() -> None:
     r"""Say hello, eleven"""
-    print(f'Hello, world!')
+    print(f'Hello, Data Science 511!')
 
 
 def main():
