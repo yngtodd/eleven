@@ -9,10 +9,6 @@
 Data Science 511!
 
 
-* Free software: BSD license
-* Documentation: https://eleven.readthedocs.io.
-
-
 #### Features
 
 DSE511 comes with a built in command line interface:
