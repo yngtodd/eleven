@@ -3,8 +3,7 @@
 
 
 
-[![Build Status](https://travis-ci.com/yngtodd/eleven.svg?branch=master)](https://travis-ci.com/yngtodd/eleven)
-[![pypi](https://img.shields.io/pypi/v/eleven.svg)](https://pypi.python.org/pypi/eleven)
+![Python package](https://github.com/yngtodd/eleven/workflows/Python%20package/badge.svg?branch=main)
 
 
 Data Science 511!
