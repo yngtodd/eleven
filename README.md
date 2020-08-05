@@ -4,6 +4,7 @@
 
 
 ![Python package](https://github.com/yngtodd/eleven/workflows/Python%20package/badge.svg?branch=main)
+![github pages](https://github.com/yngtodd/eleven/workflows/github%20pages/badge.svg)
 
 
 Data Science 511!
