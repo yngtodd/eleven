@@ -14,9 +14,9 @@ do. Don't be tempted to think that the flashiest tool is the best tool.
 This course is actively developed on [GitHub][1] using the tools that we will
 discuss. Don't worry if some things feel opaque at first. It takes time
 to get a sense of these tools and ideas. As we go throught the course, 
-things that seemed opaque will become clear. Sometimes you have to experience
-things without fully understanding them, gradually building context and
-experience as we go.
+things that at first seemed opaque will become clear. Sometimes we have 
+to experience things without fully understanding them, gradually building 
+context and experience as we go. And there will always be more to learn.
 
 
 [comment]: References
