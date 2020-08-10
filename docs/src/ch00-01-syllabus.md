@@ -1,12 +1,12 @@
-# Syllabus DSE511
+# Data Science 511 Syllabus
 
-Fall 2020\
+DSE511 Fall 2020\
 Meeting Time: MWF 6:00 PM - 6:50 PM\
 Location: Online - Canvas\
 Office Hours: online by appointment\
 
-Textbook: None\
 Credit Hours: 3\
+Textbook: None\
 Prerequisites: None\
 Course Number: 53690
 
