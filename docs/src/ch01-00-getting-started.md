@@ -20,7 +20,7 @@ not a bad initial choice.
 > if it is Haskell or Rust). There are people at the lab that use R, 
 > and there are people who are interested in pushing things further with Julia.
 
-### Anaconda
+## Anaconda
 
 We will start by using [Anaconda][1], a distribution of Python 
 including a package manager with many of the packages commonly 
@@ -46,11 +46,11 @@ body of Python.
 > is the default. We do not demand that you use a Unix like OS, but you may have
 > to do some extra leg work.
 
-##### Graphical Installer
+#### Graphical Installer
 
 For a graphical installer of Python, follow the download instructions [here][1]. 
 
-##### Command Line Installation
+#### Command Line Installation
 
 If you prefer to work on the command line, you can find various versions 
 of bash install scripts in the [Anaconda archive][2]. Make sure that you 
@@ -74,6 +74,8 @@ installer:
 ```bash
 bash <Filename>
 ```
+
+#### Verifying our Installation
 
 Once you have installed Anaconda, let's check to see that everything is working 
 well. Let's start by checking where Python is installed:
@@ -103,7 +105,7 @@ system Python instead of Anaconda.
 > default Unix program). What happens if you run `which which`?
 
 
-#### Resources
+### Resources
 
 1. Corey Schafer's [YouTube video][3] on installing Anaconda
 
