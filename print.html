@@ -86,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Data Science 511</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Data Science 511</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="ch00-01-syllabus.html">Syllabus</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -183,10 +183,93 @@ do. Don’t be tempted to think that the flashiest tool is the best tool.</p>
 <p>This course is actively developed on <a href="https://github.com/yngtodd/eleven">GitHub</a> using the tools that we will
 discuss. Don’t worry if some things feel opaque at first. It takes time
 to get a sense of these tools and ideas. As we go throught the course, 
-things that seemed opaque will become clear. Sometimes you have to experience
-things without fully understanding them, gradually building context and
-experience as we go.</p>
-<h1><a class="header" href="#getting-started" id="getting-started">Getting Started</a></h1>
+things that at first seemed opaque will become clear. Sometimes we have 
+to experience things without fully understanding them, gradually building 
+context and experience as we go. And there will always be more to learn.</p>
+<h1><a class="header" href="#data-science-511-syllabus" id="data-science-511-syllabus">Data Science 511 Syllabus</a></h1>
+<p>DSE511 Fall 2020<br />
+Meeting Time: MWF 6:00 PM - 6:50 PM<br />
+Location: Online - Canvas<br />
+Office Hours: online by appointment</p>
+<p>Credit Hours: 3<br />
+Textbook: None<br />
+Prerequisites: None<br />
+Course Number: 53690</p>
+<h3><a class="header" href="#instructors" id="instructors">Instructors:</a></h3>
+<p>Jacob Hinkle - <em>hinklejd@ornl.gov</em><br />
+Todd Young - <em>youngmt1@ornl.gov</em><br />
+TA: None </p>
+<p>Note: <em>Please include DSE 511 in subject line of emails</em></p>
+<h3><a class="header" href="#course-description" id="course-description">Course Description</a></h3>
+<p>This course is an introduction to general data science skills 
+not commonly covered in other courses. In particular, we will 
+discuss handling data, best practices for coding, and how to 
+operate in common computing environments like Linux workstations 
+and shared computing clusters. You will learn communication and 
+reproducibility fundamentals to enable your success in large 
+collaborative data science projects.</p>
+<h3><a class="header" href="#assessment-and-grading" id="assessment-and-grading">Assessment and Grading:</a></h3>
+<p>Most course-related materials will be posted on Canvas. Your 
+course grade will be evaluated based on your performance in the 
+following areas below. Late assignments will have a 10% penalty 
+per day. If you require extra time to complete an assignment 
+(e.g. due to a paper deadline or other research need), notify 
+the instructors at least one week in advance. </p>
+<pre><code>Homework: 30% 
+Projects: 70%
+</code></pre>
+<h1><a class="header" href="#getting-started-with-python" id="getting-started-with-python">Getting Started with Python</a></h1>
+<p>We will be using Python throughout the course. Why Python and not
+another language like Julia or R? While Julia and R have a lot to
+bring to the table, Python has been a de facto choice for many 
+data scientists. And for good reason, Python’s ecosystem is mature;
+there are countless libraries that you can use in your daily work.
+Inevitably, we will introduce some of these libraries ourselves. 
+Python is also not limited to data analysis. If ever you would 
+like to expolore applications outside of data science, Python is 
+not a bad initial choice.</p>
+<blockquote>
+<p><em>Side Note</em>:<br />
+if you are interested other languages, you are in good
+company. Jacob is a big fan of Haskell and Todd loves Rust and still
+appreciates C. We can’t include all of the languages we care about in
+this course, but if you would like to know how you can use another language
+over the course of your PhD, let us know! We can get you connected with
+people that would also like to use your language of choice (especially
+if it is Haskell or Rust). There are people at the lab that use R, 
+and there are people who are interested in pushing things further with Julia.</p>
+</blockquote>
+<h3><a class="header" href="#anaconda" id="anaconda">Anaconda</a></h3>
+<p>We will start by using <a href="https://www.anaconda.com/products/individual">Anaconda</a>, a distribution of Python 
+including a package manager with many of the packages commonly 
+used in data science, and a way to manage programming environments. 
+While not the only way to get started with Python, this is one of the 
+most common approaches. Many collaborators at ORNL will be familiar 
+with Anaconda, and it is an easy way to quickly get people on the same 
+page when setting up their compute environments.</p>
+<h4><a class="header" href="#installation" id="installation">Installation</a></h4>
+<p>As of Fall 2020, the Anaconda is distributing Python 3.8. Don’t worry if you
+find that you need to use a different version of Python. Anaconda can help you
+manage multiple versions of Python within <code>conda environments</code>. Just don’t use 
+Python 2. It is no longer supported by the Python Foundation, the governing 
+body of Python.</p>
+<h5><a class="header" href="#graphical-installer" id="graphical-installer">Graphical Installer</a></h5>
+<p>For a graphical installer of Python, follow the download instructions <a href="https://www.anaconda.com/products/individual">here</a>. </p>
+<h5><a class="header" href="#command-line-installation" id="command-line-installation">Command Line Installation</a></h5>
+<p>If you prefer to work on the command line, you can find various versions 
+of bash install scripts in the <a href="https://repo.anaconda.com/archive/">Anaconda archive</a>. Make sure that you 
+grab the appropriate 64 bit installer for you operating system in the archive,
+then download it using wget:</p>
+<pre><code class="language-bash">wget https://repo.anaconda.com/archive/&lt;Filename&gt;
+</code></pre>
+<p>where <code>&lt;Filename&gt;</code> is the name of the bash script found in the archive. For
+example, if you are on a 64 bit Linux system, use</p>
+<pre><code class="language-bash">wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+</code></pre>
+<p>Once you have that install script, follow the steps outlined after running the 
+installer:</p>
+<pre><code class="language-bash">bash &lt;Filename&gt;
+</code></pre>
 
                     </main>
 
