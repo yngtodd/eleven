@@ -89,7 +89,10 @@ installed in the following path:
 which python
 >>> /home/yngtodd/.local/opt/anaconda3/bin/python
 ```
-
+We will discuss paths and the Linux filesystem a bit later on. For now, Let's make sure
+that the path you get from `which python` includes `anaconda3/bin/python`. If instead you see
+`/usr/bin/python`, then we need to do some debugging as you are using what is known as 
+system Python instead of Anaconda.
 
 [comment]: References
 
