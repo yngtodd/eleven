@@ -3,7 +3,7 @@
 DSE511 Fall 2020\
 Meeting Time: MWF 6:00 PM - 6:50 PM\
 Location: Online - Canvas\
-Office Hours: online by appointment\
+Office Hours: online by appointment
 
 Credit Hours: 3\
 Textbook: None\
