@@ -10,8 +10,7 @@ Python is also not limited to data analysis. If ever you would
 like to expolore applications outside of data science, Python is 
 not a bad initial choice.
 
-> *Side Note*: 
-
+> *Side Note*:
 > if you are interested other languages, you are in good
 > company. Jacob is a big fan of Haskell and Todd loves Rust and still
 > appreciates C. We can't include all of the languages we care about in
