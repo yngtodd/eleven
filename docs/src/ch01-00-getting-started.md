@@ -30,6 +30,35 @@ most common approaches. Many collaborators at ORNL will be familiar
 with Anaconda, and it is an easy way to quickly get people on the same 
 page when setting up their compute environments.
 
+
+As of Fall 2020, the Anaconda is distributing Python 3.8. For a graphical 
+installer of Python, follow the download instructions [here][1]. 
+
+If you prefer to work on the command line, you can find various versions 
+of bash install scripts in the [Anaconda archive][2]. Make sure that you 
+grab the appropriate 64 bit installer for you operating system in the archive,
+then download it using wget:
+
+```bash
+wget https://repo.anaconda.com/archive/<Filename>
+```
+
+where `<Filename>` is the name of the bash script found in the archive. For
+example, if you are on a 64 bit Linux system, use
+
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+```
+
+Once you have that install script, follow the steps outlined after running the 
+installer:
+
+```bash
+bash <Filename>
+```
+
+
 [comment]: References
 
 [1]: https://www.anaconda.com/products/individual
+[2]: https://repo.anaconda.com/archive/
