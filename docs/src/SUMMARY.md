@@ -2,6 +2,7 @@
 
 [Data Science 511](title-page.md)
 [Introduction](ch00-00-introduction.md)
+[Syllabus](ch00-01-syllabus.md)
 
 ## Getting Started
 
