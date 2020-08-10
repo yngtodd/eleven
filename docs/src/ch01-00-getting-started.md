@@ -94,7 +94,21 @@ that the path you get from `which python` includes `anaconda3/bin/python`. If in
 `/usr/bin/python`, then we need to do some debugging as you are using what is known as 
 system Python instead of Anaconda.
 
+> *Side Note*:\
+> You may wonder what `which` is. This is a Unix program that is installed in Unix-like
+> operating systems by default. It tells you the path to where any program you run on the 
+> command line lives. Knowing more about the command line environment will be useful for us,
+> but we need to get up and running with Python first! If you are curious and want to look 
+> further into this, try `man which` to see the manual page for `which` (`man` is another
+> default Unix program). What happens if you run `which which`?
+
+
+#### Resources
+
+1. Corey Schafer's [YouTube video][3] on installing Anaconda
+
 [comment]: References
 
 [1]: https://www.anaconda.com/products/individual
 [2]: https://repo.anaconda.com/archive/
+[3]: https://www.youtube.com/watch?v=YJC6ldI3hWk
