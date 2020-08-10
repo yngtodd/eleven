@@ -94,7 +94,13 @@ that the path you get from `which python` includes `anaconda3/bin/python`. If in
 `/usr/bin/python`, then we need to do some debugging as you are using what is known as 
 system Python instead of Anaconda.
 
+
+#### Resources
+
+1. Corey Schafer's [YouTube video][3] on installing Anaconda
+
 [comment]: References
 
 [1]: https://www.anaconda.com/products/individual
 [2]: https://repo.anaconda.com/archive/
+[3]: https://www.youtube.com/watch?v=YJC6ldI3hWk
