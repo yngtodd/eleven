@@ -253,6 +253,15 @@ find that you need to use a different version of Python. Anaconda can help you
 manage multiple versions of Python within <code>conda environments</code>. Just don’t use 
 Python 2. It is no longer supported by the Python Foundation, the governing 
 body of Python.</p>
+<blockquote>
+<p><em>Side Note</em>:<br />
+For much of this book we are assuming that you are using a Unix like operating
+system (Linux, MacOS, BSD). If you are using Windows, please let us know! We
+can help you sort out some potential issues you may have. For much of the 
+computing at ORNL, particularly when it comes to the supercomputers, Linux 
+is the default. We do not demand that you use a Unix like OS, but you may have
+to do some extra leg work.</p>
+</blockquote>
 <h5><a class="header" href="#graphical-installer" id="graphical-installer">Graphical Installer</a></h5>
 <p>For a graphical installer of Python, follow the download instructions <a href="https://www.anaconda.com/products/individual">here</a>. </p>
 <h5><a class="header" href="#command-line-installation" id="command-line-installation">Command Line Installation</a></h5>
@@ -270,6 +279,19 @@ example, if you are on a 64 bit Linux system, use</p>
 installer:</p>
 <pre><code class="language-bash">bash &lt;Filename&gt;
 </code></pre>
+<p>Once you have installed Anaconda, let’s check to see that everything is working 
+well. Let’s start by checking where Python is installed:</p>
+<pre><code class="language-bash">which python
+</code></pre>
+<p>This will give you a path to where Python is installed. For example, my Python is 
+installed in the following path:</p>
+<pre><code class="language-bash">which python
+&gt;&gt;&gt; /home/yngtodd/.local/opt/anaconda3/bin/python
+</code></pre>
+<p>We will discuss paths and the Linux filesystem a bit later on. For now, Let’s make sure
+that the path you get from <code>which python</code> includes <code>anaconda3/bin/python</code>. If instead you see
+<code>/usr/bin/python</code>, then we need to do some debugging as you are using what is known as 
+system Python instead of Anaconda.</p>
 
                     </main>
 
