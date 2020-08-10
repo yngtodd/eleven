@@ -38,6 +38,14 @@ manage multiple versions of Python within `conda environments`. Just don't use
 Python 2. It is no longer supported by the Python Foundation, the governing 
 body of Python.
 
+> *Side Note*:\
+> For much of this book we are assuming that you are using a Unix like operating
+> system (Linux, MacOS, BSD). If you are using Windows, please let us know! We
+> can help you sort out some potential issues you may have. For much of the 
+> computing at ORNL, particularly when it comes to the supercomputers, Linux 
+> is the default. We do not demand that you use a Unix like OS, but you may have
+> to do some extra leg work.
+
 ##### Graphical Installer
 
 For a graphical installer of Python, follow the download instructions [here][1]. 
@@ -66,6 +74,20 @@ installer:
 ```bash
 bash <Filename>
 ```
+
+Once you have installed Anaconda, let's check to see that everything is working 
+well. Let's start by checking where Python is installed:
+
+```bash
+which python
+```
+
+This will give you a path to where Python is installed. For example, my Python is 
+installed in the following path:
+
+```bash
+which python
+>>> /home/yngtodd/.local/opt/anaconda3/bin/python```
 
 
 [comment]: References
