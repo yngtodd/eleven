@@ -30,9 +30,15 @@ most common approaches. Many collaborators at ORNL will be familiar
 with Anaconda, and it is an easy way to quickly get people on the same 
 page when setting up their compute environments.
 
+#### Installation
 
-As of Fall 2020, the Anaconda is distributing Python 3.8. For a graphical 
-installer of Python, follow the download instructions [here][1]. 
+As of Fall 2020, the Anaconda is distributing Python 3.8. 
+
+##### Graphical Installer
+
+For a graphical installer of Python, follow the download instructions [here][1]. 
+
+##### Command Line Installation
 
 If you prefer to work on the command line, you can find various versions 
 of bash install scripts in the [Anaconda archive][2]. Make sure that you 
