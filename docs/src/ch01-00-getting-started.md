@@ -87,7 +87,8 @@ installed in the following path:
 
 ```bash
 which python
->>> /home/yngtodd/.local/opt/anaconda3/bin/python```
+>>> /home/yngtodd/.local/opt/anaconda3/bin/python
+```
 
 
 [comment]: References
