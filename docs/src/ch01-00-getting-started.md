@@ -32,7 +32,11 @@ page when setting up their compute environments.
 
 #### Installation
 
-As of Fall 2020, the Anaconda is distributing Python 3.8. 
+As of Fall 2020, the Anaconda is distributing Python 3.8. Don't worry if you
+find that you need to use a different version of Python. Anaconda can help you
+manage multiple versions of Python within `conda environments`. Just don't use 
+Python 2. It is no longer supported by the Python Foundation, the governing 
+body of Python.
 
 ##### Graphical Installer
 
