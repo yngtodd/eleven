@@ -75,6 +75,8 @@ installer:
 bash <Filename>
 ```
 
+#### Verifying our Installation
+
 Once you have installed Anaconda, let's check to see that everything is working 
 well. Let's start by checking where Python is installed:
 
