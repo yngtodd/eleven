@@ -27,3 +27,18 @@ operate in common computing environments like Linux workstations
 and shared computing clusters. You will learn communication and 
 reproducibility fundamentals to enable your success in large 
 collaborative data science projects.
+
+
+### Assessment and Grading: 
+
+Most course-related materials will be posted on Canvas. Your 
+course grade will be evaluated based on your performance in the 
+following areas below. Late assignments will have a 10% penalty 
+per day. If you require extra time to complete an assignment 
+(e.g. due to a paper deadline or other research need), notify 
+the instructors at least one week in advance. 
+
+```
+Homework: 30% 
+Projects: 70%
+```
