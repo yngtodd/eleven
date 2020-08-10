@@ -94,7 +94,7 @@ that the path you get from `which python` includes `anaconda3/bin/python`. If in
 `/usr/bin/python`, then we need to do some debugging as you are using what is known as 
 system Python instead of Anaconda.
 
-> *Side Note*:
+> *Side Note*:\
 > You may wonder what `which` is. This is a Unix program that is installed in Unix-like
 > operating systems by default. It tells you the path to where any program you run on the 
 > command line lives. Knowing more about the command line environment will be useful for us,
