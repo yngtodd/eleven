@@ -24,4 +24,4 @@ always be elements of things that we do not know. Build up experience with the t
 your disposal, and you will find yourself able to collaborate and learn as you go.
 
 
-- *Todd Young*
+*Todd Young*
