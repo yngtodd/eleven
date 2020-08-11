@@ -26,8 +26,8 @@ I believe it is important to consider this course and data science in
 context. Data science is a broad term, and many people have many takes 
 on what it means. For some, it is about data preprocessing, visualization, 
 and summarization. For others, it is largely about machine learning models. 
-Some people consider themselves more akin to statisticians than computer 
-scientists. 
+Some people consider themselves more akin to statisticians or mathematicians,
+others more closely align with computer scientists.
 
 
 My opinion, and this is biased for sure, is that data science 
@@ -45,12 +45,12 @@ One of the great things about PhD work is that you get to plot your own
 course with your studies. This is especially true with the Bredesen Center as
 it is intended to be interdisciplinary. So let me encourage you to seek out
 diverse perspectives across the University of Tennessee and Oak Ridge National
-Lab. They are both great places to be.
+Lab. They are both great places to study and do research.
 
 
 When I studied at UT, I stradled the Math, Statistics, and Computer Science 
 departments. If it is not already clear from above, I hold most strongly 
-to the Computer Science department, but both the Math and Statistics departments
+to the Computer Science department, but both the Math and Statistics Departments
 have their strengths. Feel free to ask me questions about my experience at UT. 
 Though I will be biased, I may be able to help orient you as you seek out courses
 and research during your time at UT. Fair warning, I will likely encourage you 
