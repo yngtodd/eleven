@@ -42,3 +42,39 @@ the instructors at least one week in advance.
 Homework: 30% 
 Projects: 70%
 ```
+
+### Individual Project:
+
+We will assign a mid-term project involving ingestion of raw data 
+and basic data analysis. Code and a short report will be produced. 
+Students will be judged on documentation, reproducibility, and 
+functionality of their solution.
+
+### Group Project:
+
+We will split the class into groups of 3-5 individuals who will 
+approach a more complex project involving multiple repositories and 
+roles. Students will be expected to work with one another, contribute 
+to each other’s code-bases, and communicate effectively in order to 
+accomplish their task. At the end of the semester a presentation will 
+be prepared by each group, outlining their approach and we will discuss 
+what worked and did not work as a class.The grade system below will be 
+used to determine your final grade. To minimize possible bias, no grades 
+will be rounded and there will be no extra credit.
+
+### Grading
+
+The grade system below will be used to determine your final grade. 
+To minimize possible bias, no grades will be rounded and there will 
+be no extra credit.
+
+
+Grade  | Minimum Percentage ||
+-----  | :----------------: ||
+A      |  90                ||
+B      |  80                ||
+C      |  70                ||
+D      |  60                ||
+F      |  00                ||
+
+
