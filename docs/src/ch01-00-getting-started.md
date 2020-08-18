@@ -108,9 +108,11 @@ system Python instead of Anaconda.
 ### Resources
 
 1. Corey Schafer's [YouTube video][3] on installing Anaconda
+2. Anaconda [Docs][4]
 
 [comment]: References
 
 [1]: https://www.anaconda.com/products/individual
 [2]: https://repo.anaconda.com/archive/
 [3]: https://www.youtube.com/watch?v=YJC6ldI3hWk
+[4]: https://docs.anaconda.com/anaconda/user-guide/getting-started/
