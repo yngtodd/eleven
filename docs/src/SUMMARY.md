@@ -11,3 +11,4 @@
 ## Visualization
 
 - [Visualization](ch02-00-visualization.md)
+  - [Matplotlib](ch02-01-matplotlib.md)
