@@ -8,6 +8,6 @@
 
 - [Getting Started](ch01-00-getting-started.md)
 
-## Vizualization
+## Visualization
 
-- [Visualization](ch02-00-vizualization.md)
+- [Visualization](ch02-00-visualization.md)
