@@ -7,3 +7,7 @@
 ## Getting Started
 
 - [Getting Started](ch01-00-getting-started.md)
+
+## Vizualization
+
+- [Visualization](ch02-00-vizualization.md)
