@@ -51,7 +51,7 @@ img {
 
 ### Axes
 
-Axes are an important part of Matplotlib's interface. These are what
+`Axes` are an important part of Matplotlib's interface. These are what
 you would consider the "plot" of your figure, the area in the image
 that contains your data. A figure can have many `Axes`, but each `Axes`
 can only have one `Figure`. Data limits for the figure can be controlled 
@@ -61,7 +61,29 @@ two or three `Axis` objects.
 
 ### Axis
 
+An `Axis` is acts as a scale delimeter for the `Axes`. They set the limits
+of a figure and control the ticks of a plot.
 
+
+## Creating Figures
+
+While we will take a closer look at this over the next sections of this 
+chapter, there are a couple of things you want to keep in mind when 
+working with Matplotlib.
+
+### Input Data
+
+Matplotlib recommends using [Numpy][5] arrays as input types for figures.
+You can often get away with using Python lists and [Pandas][6] dataframe
+objects, but you might encounter some rough edges here and there when
+using those object types.
+
+### Two Iterfaces
+
+As mentioned above, there are two main interfaces for Matplotlib, the
+state-machine interface and the object-oriented interface. In the next
+section, we will cover each of these approaches and talk about when you
+would want to use each.
 
 [comment]: References
 
@@ -69,4 +91,5 @@ two or three `Axis` objects.
 [2]: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot
 [3]: https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes
 [4]: https://matplotlib.org/3.2.2/api/backend_bases_api.html#matplotlib.backend_bases.FigureCanvasBase
-[5]: img/ch02-visualization
+[5]: https://numpy.org/
+[6]: https://pandas.pydata.org/
