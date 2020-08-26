@@ -51,6 +51,16 @@ img {
 
 ### Axes
 
+Axes are an important part of Matplotlib's interface. These are what
+you would consider the "plot" of your figure, the area in the image
+that contains your data. A figure can have many `Axes`, but each `Axes`
+can only have one `Figure`. Data limits for the figure can be controlled 
+through `Axes` with `axes.Axes.set_xlim()` and `axes.Axes.set_ylim()`. Axes 
+also hold titles and labels for each for each axis. Axes contain either 
+two or three `Axis` objects.
+
+### Axis
+
 
 
 [comment]: References
