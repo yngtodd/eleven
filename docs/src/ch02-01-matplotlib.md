@@ -45,7 +45,7 @@ img {
 </style>
 </head>
   <body>
-    <img src="img/ch02-visualization/figure_empty.png" alt="empty" class="center" width="250"/>
+    <img src="img/ch02-visualization/figure_empty.png" width="300"/>
   </body>
 </html>
 
