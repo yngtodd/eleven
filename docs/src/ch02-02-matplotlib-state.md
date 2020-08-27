@@ -60,14 +60,15 @@ show`.
 
 ## Adding some Details
 
-While pyplot can infer a lot of the details for us, we often want to 
-handle those things for ourselves.
+While pyplot can infer a lot of the details for us, we will need to
+handle axis labels and titles ourselves.
 
 
 ```python
 plt.plot(squares)
-plt.ylabel('Square of X')
 plt.title('Squares Plot')
+plt.ylabel(r'$X^{2}$')
+plt.xlabel('X')
 plt.show()
 ```
 
@@ -90,7 +91,7 @@ figcaption {
   <figure>
     <img src="img/ch02-visualization/squares_plot.png" width="300"/>
     <figcaption>
-      Fig.2 - Adding a y-axis label and a title to our figure.
+      Fig.2 - Adding axis labels and a title to our figure.
     </figcaption>
   </figure>
 </html>
