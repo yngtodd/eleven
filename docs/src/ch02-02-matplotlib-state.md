@@ -37,7 +37,7 @@ figcaption {
 </style>
 </head>
   <figure>
-    <img src="img/ch02-visualization/basic_pyplot.png" width="300"/>
+    <img src="img/ch02-visualization/basic_pyplot.png" width="350"/>
     <figcaption>
       Fig.1 - A simple curve of the first 10 squares.
     </figcaption>
@@ -89,12 +89,13 @@ figcaption {
 </style>
 </head>
   <figure>
-    <img src="img/ch02-visualization/squares_plot.png" width="300"/>
+    <img src="img/ch02-visualization/squares_plot.png" width="350"/>
     <figcaption>
       Fig.2 - Adding axis labels and a title to our figure.
     </figcaption>
   </figure>
 </html>
+
 
 [comment]: References
 
