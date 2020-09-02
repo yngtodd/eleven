@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Data Science 511 - DSE511</title>
+        <title>Matplotlib - DSE511</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Data Science 511</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="ch00-01-syllabus.html">Syllabus</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="ch02-00-visualization.html"><strong aria-hidden="true">2.</strong> Visualization</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch02-01-matplotlib.html"><strong aria-hidden="true">2.1.</strong> Matplotlib</a></li><li class="chapter-item expanded "><a href="ch02-02-matplotlib-state.html"><strong aria-hidden="true">2.2.</strong> Matplotlib Pyplot</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Data Science 511</a></li><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="ch00-01-syllabus.html">Syllabus</a></li><li class="chapter-item expanded "><a href="ch01-00-getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="ch02-00-visualization.html"><strong aria-hidden="true">2.</strong> Visualization</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch02-01-matplotlib.html" class="active"><strong aria-hidden="true">2.1.</strong> Matplotlib</a></li><li class="chapter-item expanded "><a href="ch02-02-matplotlib-state.html"><strong aria-hidden="true">2.2.</strong> Matplotlib Pyplot</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,34 +150,84 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#data-science-511" id="data-science-511">Data Science 511</a></h1>
-<p>Welcome to Data Science 511! This course is an introduction to the tools and
-practices of data scientists. Our goal is to get you familiar with how work is
-done in data science, at an individual level as well as in collaborative settings.
-This is an interdisciplinary field that includes people from all sorts of
-backgrounds and experience, but there are things that all data scientists share.
-This course will give you experience in working as a data scientist, and will point
-you to tools that you can use, regardless of where your research interests take you.</p>
-<p>We will begin with work at an individual level, getting familiar with the tools that
-each data scientist can use when working on a solo project. Gradually, we will expand 
-our approach to show how those same tools can be used to collaborate with other individuals,
-teams, and large organizations. As we go through the semester, we will find how each of
-these tools benefit us, and how they can be combined in powerful ways.</p>
-<p>As we said before, data scientists come from all sorts of backgrounds. This diversity is
-a strength of data science and often leads to interesting projects and perspectives that
-you may not be familiar with. Don’t be intimidated by not knowing everything. There will
-always be elements of things that we do not know. Build up experience with the tools at
-your disposal, and you will find yourself able to collaborate and learn as you go.</p>
-<p><em>Todd Young</em></p>
+                        <h1><a class="header" href="#matplotlib" id="matplotlib">Matplotlib</a></h1>
+<p><a href="https://matplotlib.org/">Matplotlib</a> is one of the most mature visualization libraries
+in Python. It allows us to quickly create figures when we are
+first exploring our data and models, and allows us to have a
+lot of control over our final figures for publications.</p>
+<p>Like many mature software projects, it can be a bit daunting 
+to work with at first. There are a couple ways to approach things 
+with Matplotlib, through what is known as the state-machine interface
+of <a href="https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot">matplotlib.pyplot</a> and the object oriented approach. Depending 
+on our needs, we might prefer one over the other. We will take 
+a look at both of these approaches. </p>
+<h2><a class="header" href="#key-components-of-a-figure" id="key-components-of-a-figure">Key Components of a Figure</a></h2>
+<p>There are several components of a Matplotlib figure. Understanding 
+how each of these fit together will give us better control over our
+visualizations. This is important when we want to present our work 
+in papers, but it will also help us debug things when the default 
+settings for figures don’t quite come out right.</p>
+<h3><a class="header" href="#figure" id="figure">Figure</a></h3>
+<p>This is the entire figure object. It keeps track of all the figure’s 
+<a href="https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes">Axes</a>, legends, titles, and the <a href="https://matplotlib.org/3.2.2/api/backend_bases_api.html#matplotlib.backend_bases.FigureCanvasBase">canvas</a> object. </p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+fig = plt.figure()
+fig.suptitle('Empty Figure Without Axes')
+plt.show()
+</code></pre>
+<html>
+<head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+  <body>
+    <img src="img/ch02-visualization/figure_empty.png" width="300"/>
+  </body>
+</html>
+<h3><a class="header" href="#axes" id="axes">Axes</a></h3>
+<p><code>Axes</code> are an important part of Matplotlib’s interface. These are what
+you would consider the “plot” of your figure, the area in the image
+that contains your data. A figure can have many <code>Axes</code>, but each <code>Axes</code>
+can only have one <code>Figure</code>. Data limits for the figure can be controlled 
+through <code>Axes</code> with <code>axes.Axes.set_xlim()</code> and <code>axes.Axes.set_ylim()</code>. Axes 
+also hold titles and labels for each for each axis. Axes contain either 
+two or three <code>Axis</code> objects.</p>
+<h3><a class="header" href="#axis" id="axis">Axis</a></h3>
+<p>An <code>Axis</code> is acts as a scale delimeter for the <code>Axes</code>. They set the limits
+of a figure and control the ticks of a plot.</p>
+<h2><a class="header" href="#creating-figures" id="creating-figures">Creating Figures</a></h2>
+<p>While we will take a closer look at this over the next sections of this 
+chapter, there are a couple of things you want to keep in mind when 
+working with Matplotlib.</p>
+<h3><a class="header" href="#input-data" id="input-data">Input Data</a></h3>
+<p>Matplotlib recommends using <a href="https://numpy.org/">Numpy</a> arrays as input types for figures.
+You can often get away with using Python lists and <a href="https://pandas.pydata.org/">Pandas</a> dataframe
+objects, but you might encounter some rough edges here and there when
+using those object types.</p>
+<h3><a class="header" href="#two-iterfaces" id="two-iterfaces">Two Iterfaces</a></h3>
+<p>As mentioned above, there are two main interfaces for Matplotlib, the
+state-machine interface and the object-oriented interface. In the next
+section, we will cover each of these approaches and talk about when you
+would want to use each.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="ch02-00-visualization.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="ch00-00-introduction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="ch02-02-matplotlib-state.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -189,9 +239,13 @@ your disposal, and you will find yourself able to collaborate and learn as you g
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="ch02-00-visualization.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="ch00-00-introduction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="ch02-02-matplotlib-state.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
