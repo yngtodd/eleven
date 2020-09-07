@@ -7,7 +7,11 @@ with open('README.md') as readme_file:
 
 setup_requirements = ['pytest-runner', ]
 test_requirements = ['pytest>=3', ]
-requirements = ['argh',]
+requirements = [
+    'argh',
+    'matplotlib==3.3.1',
+    'numpy==1.19.0'
+]
 
 
 COMMANDS = [
