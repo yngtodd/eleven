@@ -10,7 +10,9 @@ test_requirements = ['pytest>=3', ]
 requirements = [
     'argh',
     'matplotlib==3.3.1',
-    'numpy==1.19.0'
+    'numpy==1.19.0',
+    'pandas==1.1.1',
+    'scikit-learn==0.23'
 ]
 
 
