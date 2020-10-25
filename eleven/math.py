@@ -9,4 +9,4 @@ def add_one(x: int):
 
 def halve(x: float):
     """Divide a number by 2"""
-    retrun x / 2
+    return x / 2
