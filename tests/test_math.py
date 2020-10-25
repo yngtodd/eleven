@@ -13,3 +13,7 @@ def test_add_positive():
 
 def test_halve():
     assert math.halve(2.0) == 1.0
+
+
+def test_halve_int():
+    assert math.halve(4) == 2
